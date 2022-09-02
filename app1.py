@@ -30,7 +30,7 @@ def load_data(x):
     return (logreg)
 
 data_train_state = st.text('Loading and training data.....')
-logreg = load_data("https://github.com/krao14/krao14repo/blob/main/framingham_heart_disease.csv")
+logreg = load_data("https://raw.githubusercontent.com/krao14/krao14repo/main/framingham_heart_disease.csv")
 data_train_state.text('Done: Loading and training data')
 
 data = {"model": logreg}
