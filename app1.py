@@ -24,9 +24,10 @@ def load_data(x):
     logreg = LogisticRegression(max_iter=1000)
     logreg.fit(X_train, y_train)
 
-    # training_accuracy = logreg.score(X_train, y_train)
-    # testing_accuracy = logreg.score(X_test, y_test)
-
+    training_accuracy = logreg.score(X_train, y_train)
+    print("Training accuracy", training_accuracy)
+    testing_accuracy = logreg.score(X_test, y_test)
+    print("Testing accuracy", testing_accuracy)
     return (logreg)
 
 data_train_state = st.text('Loading and training data.....')
